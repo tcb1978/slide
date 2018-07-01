@@ -1,0 +1,24 @@
+.slider-wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: .5fr 5fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "previous slideshow next";
+}
+
+.previousButton {
+    grid-area: previous;
+    border: .5px solid pink;
+}
+
+.track {
+    grid-area: slideshow;
+    border: .5px solid pink;
+}
+
+.nextButton {
+    grid-area: next;
+    border: .5px solid pink;
+}
+
+@media(min-width:768px) {}

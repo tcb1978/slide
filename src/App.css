@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Diamond;
+  src: url('./assets/Black\ Diamond.otf') format('opentype');
+}
+
+@font-face {
+  font-family: Latinotype;
+  src: url('./assets/Latinotype\ -\ TrendSansOne.otf') format('opentype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Latinotype;
+  color: #fff;
+}
+
+/*Mobile*/
+.App {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 45vh 25vh 10vh;
+  grid-template-areas:
+  "header"
+  "main"
+  "aside"
+  "footer";
+  padding: 15px;
+}
+
+.header {
+  grid-area: header;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.aside {
+  grid-area: aside;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.main {
+  grid-area: main;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.footer {
+  grid-area: footer;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+
+/*Medium*/
+@media(min-width:768px) {
+  .App {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header header" 
+    "main main main aside" 
+    "main main main aside" 
+    "footer footer footer footer";
+    padding: 15px 30px;
+  }
+}
+
+/* .App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+} */
+
+
+/* @keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */

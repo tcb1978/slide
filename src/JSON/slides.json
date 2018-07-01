@@ -1,0 +1,47 @@
+{"items" : [
+    {
+        "excerpt": "1",
+        "imgSrc": "https://s3-us-west-1.amazonaws.com/wearedauntless/weDoBusinessTransormation.jpg",
+        "title": "We Do Business Transformation"
+    },
+    {
+        "excerpt": "2",
+        "imgSrc": "https://s3-us-west-1.amazonaws.com/wearedauntless/weAreDauntless.jpg",
+        "title": "We Are Dauntless"
+    },
+    {
+        "excerpt": "3",
+        "imgSrc": "https://s3-us-west-1.amazonaws.com/wearedauntless/weAreDauntlessTwo.jpg",
+        "title": "We Are Dauntless"
+    },
+    {
+        "excerpt": "4",
+        "imgSrc": "https://s3-us-west-1.amazonaws.com/wearedauntless/weAreDigitalStrategy.jpg",
+        "title": "We Are Digital Strategy"
+    },
+    {
+        "excerpt": "5",
+        "imgSrc": "https://s3-us-west-1.amazonaws.com/wearedauntless/weAreLondon.jpg",
+        "title": ""
+    },
+    {
+        "excerpt": "6",
+        "imgSrc": "https://s3-us-west-1.amazonaws.com/wearedauntless/weAreNewYork.jpg",
+        "title": ""
+    },
+    {
+        "excerpt": "7",
+        "imgSrc": "https://s3-us-west-1.amazonaws.com/wearedauntless/weAreUnafraid.jpg",
+        "title": ""
+    },
+    {
+        "excerpt": "8",
+        "imgSrc": "https://s3-us-west-1.amazonaws.com/wearedauntless/Logo-White.png",
+        "title": "Dauntless"
+    },
+    {
+        "excerpt": "9",
+        "imgSrc": "https://s3-us-west-1.amazonaws.com/wearedauntless/Logo-Blue.png",
+        "title": "Dauntless"
+    }
+]}
