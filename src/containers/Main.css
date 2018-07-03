@@ -1,24 +1,77 @@
-.slider-wrapper {
+.main {
+    animation: pop-in 1s linear;
     display: grid;
     height: 100%;
-    grid-template-columns: .5fr 5fr .5fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "previous slideshow next";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "excerpt excerpt excerpt ." "excerpt excerpt excerpt ." "excerpt excerpt excerpt ." "previous . next .";
 }
 
-.previousButton {
+.excerpt {
+    grid-area: excerpt;
+}
+
+.backArrow {
     grid-area: previous;
-    border: .5px solid pink;
 }
 
-.track {
-    grid-area: slideshow;
-    border: .5px solid pink;
-}
-
-.nextButton {
+.nextArrow {
     grid-area: next;
-    border: .5px solid pink;
 }
 
-@media(min-width:768px) {}
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .main {
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr 1fr;
+        -ms-grid-rows: 1fr 1fr 1fr 1fr;
+    }
+    .excerpt {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+    .backArrow {
+        -ms-grid-row: 4;
+        -ms-grid-row-span: 0;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 0;
+    }
+    .nextArrow {
+        -ms-grid-row: 4;
+        -ms-grid-row-span: 0;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 0;
+    }
+}
+
+
+@media(min-width:768px) {
+    .main {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". excerpt excerpt excerpt excerpt excerpt excerpt ." 
+        "previous excerpt excerpt excerpt excerpt excerpt excerpt next" 
+        ". excerpt excerpt excerpt excerpt excerpt excerpt .";
+    }
+
+    .excerpt {
+        grid-area: excerpt;
+    }
+
+    .previous {
+        grid-area: previous;
+    }
+
+    .next {
+        grid-area: next;
+    }
+
+    .excerpt {
+        height: 80vh;
+    }
+}

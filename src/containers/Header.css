@@ -1,0 +1,22 @@
+/*Mobile*/
+
+.header {
+    padding: 13px;
+}
+
+.header__logo {
+    height: '-webkit-fill-available',
+}
+
+
+
+/*Medium*/
+@media(min-width:768px) {
+    .header {
+        padding: 30px;
+    }
+
+    .header__logo {
+        height: 10em;
+    }
+}

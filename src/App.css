@@ -18,6 +18,7 @@ body {
 }
 
 /*Mobile*/
+/*Layout Styles*/
 .App {
   display: grid;
   grid-gap: 10px;
@@ -32,32 +33,42 @@ body {
 }
 
 .header {
+  animation: pop-in 1s linear;
   grid-area: header;
   border: 1px solid #fff;
   border-radius: 5px;
 }
 
 .aside {
+  animation: pop-in 1s linear;
   grid-area: aside;
   border: 1px solid #fff;
   border-radius: 5px;
 }
 
 .main {
+  animation: pop-in 1s linear;
   grid-area: main;
   border: 1px solid #fff;
   border-radius: 5px;
 }
 
 .footer {
+  animation: pop-in 1s linear;
   grid-area: footer;
   border: 1px solid #fff;
   border-radius: 5px;
+}
+/*End Layout Styles*/
+
+.container {
+  padding: 15px;
 }
 
 
 /*Medium*/
 @media(min-width:768px) {
+  /*Layout Styles*/
   .App {
     display: grid;
     height: 100%;
@@ -70,15 +81,22 @@ body {
     "footer footer footer footer";
     padding: 15px 30px;
   }
+  /*End Layout Styles*/
+  .container {
+    padding: 30px;
+  }
 }
 
-/* .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-} */
 
 
-/* @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-} */
+/*Keyframes*/
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
